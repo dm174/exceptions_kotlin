@@ -32,6 +32,10 @@ object WallService {
     private var posts = emptyArray<Post>()
     private var lastId = 0
 
+    fun getLastId(): Int {
+        return lastId
+    }
+
     fun createComment(postId: Int, comment: Comment): Comment {
         val post = posts.find { it.id == postId }
         return if (post != null) {
@@ -70,6 +74,7 @@ object WallService {
 
     fun clear() {
         posts = emptyArray()
+        comments = emptyArray()
         lastId = 0// также здесь нужно сбросить счетчик для id постов, если он у вас используется
     }
 
@@ -102,4 +107,7 @@ fun main() {
     } catch (e: PostNotFoundException) {
         println(e.message)
     }
+    WallService.clear()
+    WallService.print()
+
 }

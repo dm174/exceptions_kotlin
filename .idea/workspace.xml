@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bea69f82-00db-4cc7-b5d3-d7d3b760154a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/MainKtTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MainKtTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -293,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686285953973</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="+Задача №2. JUnit">
+      <created>1686286185739</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686286185739</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -304,7 +313,8 @@
     <MESSAGE value="Лучший 83" />
     <MESSAGE value="Исправил!" />
     <MESSAGE value="+ Задача №1.PostNotFoundException" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ Задача №1.PostNotFoundException" />
+    <MESSAGE value="+Задача №2. JUnit" />
+    <option name="LAST_COMMIT_MESSAGE" value="+Задача №2. JUnit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OOP_5$MainKtTest_testUpdateNonExistingPost.ic" NAME="MainKtTest.testUpdateNonExistingPost Coverage Results" MODIFIED="1686123644401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

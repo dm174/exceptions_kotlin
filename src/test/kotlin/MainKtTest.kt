@@ -15,7 +15,19 @@ class MainKtTest {
         val comment = Comment(1, 1, "Hello, world!")
         WallService.createComment(3, comment)
     }
+    @Test
+    fun testCreateComment() {
+        val post = Post(1)
+        WallService.add(post)
 
+        val comment = Comment(2, post.id, "Hello, world!")
+        val createdComment = WallService.createComment(post.id, comment)
+
+        assertNotNull(createdComment)
+        assertEquals(comment.id, createdComment.id)
+        assertEquals(comment.postId, createdComment.postId)
+        assertEquals(comment.text, createdComment.text)
+    }
     @Test
     fun testAddPost() {
         val post = Post(0)
@@ -111,4 +123,20 @@ class MainKtTest {
         val result = WallService.update(updatedPost)
         assertTrue(result)
     }
+    @Test
+    fun testClearPostsAndLastId() {
+        val post1 = Post(1)
+        val post2 = Post(2)
+        WallService.add(post1)
+        WallService.add(post2)
+        WallService.clear()
+        val retrievedPost1 = WallService.getById(post1.id)
+        val retrievedPost2 = WallService.getById(post2.id)
+        assertNull(retrievedPost1)
+        assertNull(retrievedPost2)
+        assertEquals(0, WallService.getLastId())
+    }
+
+
+
 }
