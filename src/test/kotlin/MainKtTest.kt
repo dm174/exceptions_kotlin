@@ -10,7 +10,11 @@ class MainKtTest {
     fun clearBeforeTest() {
         WallService.clear()
     }
-
+    @Test(expected = PostNotFoundException::class)
+    fun shouldThrow() {
+        val comment = Comment(1, 1, "Hello, world!")
+        WallService.createComment(3, comment)
+    }
 
     @Test
     fun testAddPost() {
